@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .btn1, .btn2 {
+    display: inline-block;
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 15px;
+    border-width: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    background-color: black;
+    border-color: rgb(210, 216, 221);
+    margin-left: 20px;
+  }
+  
+  .btn1:hover, .btn2:hover {
+    animation: mudarCor 0.6s linear infinite;
+  }
+  
+  @keyframes mudarCor {
+    0% { color: rgb(239, 8, 8); }
+    50% { color: rgba(150, 39, 39, 0.226); }
+    100% { color: rgba(230, 20, 20, 0.718); }
+  }
+
+  .batata{
+    text-align: center;
+    align-items: center;
+  }
+
+  .btn1-posicao-inicial {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .btn1-posicao-final {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  
+  .btn2-posicao-inicial {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .btn2-posicao-final {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  
+  
